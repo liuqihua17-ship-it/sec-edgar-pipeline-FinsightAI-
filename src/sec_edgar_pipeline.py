@@ -285,6 +285,7 @@ def stage_build_chunks(chunk_size: int = 1200, overlap: int = 200):
                         "cik": d["cik"],
                         "form": d["form"],
                         "filing_date": d["filing_date"],
+                        "year": int(d["filing_date"][:4]) if d.get("filing_date") else None,
                         "source_url": d["source_url"],
                         "local_path": d["local_path"],
                         "char_start": a,

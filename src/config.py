@@ -8,10 +8,12 @@ class Settings:
     raw_dir: Path = data_dir / "raw"
     dataset_dir: Path = data_dir / "dataset"
 
-    # SEC 要求带联系方式的 UA（建议你换成你的邮箱）
-    user_agent: str = "BANA275-NLP-StudentProject/1.0 (contact: ruofay3@uci.edu)"
+    # SEC requires a descriptive User-Agent with contact information
+    # Replace the email below with your own email address
+    user_agent: str = "BANA275-NLP-StudentProject/1.0 (contact: Your email here)"
 
-    # 保守限流：0.2s ~= 5 req/s
+   
+    # Conservative rate limit: 0.2s ≈ 5 requests/sec
     sleep_seconds: float = 0.2
 
 settings = Settings()
