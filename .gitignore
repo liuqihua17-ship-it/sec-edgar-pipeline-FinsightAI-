@@ -10,7 +10,7 @@ __pycache__/
 .venv/
 .env
 
-# Data (do not commit)
+# Data 
 data/raw/
 data/dataset/
 data/index/
